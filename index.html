@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejasvi Raj Singh - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+ 
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-50"> 
+
+
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+  
+<div class="container mx-auto px-6 py-3 flex justify-between items-center">
+  <!-- Left Section (Text + GIF) -->
+  <div class="flex items-center space-x-2">
+    <div class="text-2xl font-bold gradient-text">Portfolio</div>
+    <img src="codegif.webp" alt="Portfolio GIF" class="w-8 h-8">
+  </div>
+
+  <!-- Right Section (Menu Items) -->
+  <div class="hidden md:flex space-x-8">
+    <!-- Your navigation links go here -->
+  </div>
+</div>
+  
+      </div>
+      <div class="hidden md:flex space-x-8">
+        
+
+
+
+        <a href="#home" class="hover:text-blue-600 transition">Home</a>
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#education" class="hover:text-blue-600 transition">Education</a>
+        <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </div>
+      <button class="md:hidden focus:outline-none" id="menuBtn">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white w-full px-6 pb-4" id="mobileMenu">
+      <a href="#home" class="block py-2 hover:text-blue-600">Home</a>
+      <a href="#about" class="block py-2 hover:text-blue-600">About</a>
+      <a href="#education" class="block py-2 hover:text-blue-600">Education</a>
+      <a href="#skills" class="block py-2 hover:text-blue-600">Skills</a>
+      <a href="#projects" class="block py-2 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center pt-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Tejasvi Raj Singh</span></h1>
+        <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">B.Tech Student at Parul University</h2>
+        <p class="text-gray-500 mb-8 max-w-lg">Passionate about technology and innovation. Currently pursuing my engineering degree while developing skills in software development and problem solving.</p>
+        <div class="flex space-x-4">
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition">Contact Me</a>
+          <a href="#projects" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full transition">My Work</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+          <img src="max1.jpg" alt="Portrait of Tejasvi Raj Singh, a young Indian college student with short dark hair, wearing a collared shirt, looking professional with a slight smile" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About <span class="gradient-text">Me</span></h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+          <div class="w-64 h-64 rounded-lg overflow-hidden shadow-xl">
+            <img src="computer.png" alt="Tejasvi Raj Singh working on a laptop in a college library, surrounded by books with focused expression" />
+          </div>
+        </div>
+        <div class="md:w-2/3 md:pl-12">
+          <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+          <p class="text-gray-600 mb-6">
+            <b>I'm Tejasvi Raj Singh,</b> a dedicated B.Tech student at Parul University with a passion for technology and innovation. My journey in the world of engineering has equipped me with strong problem-solving skills and a keen eye for detail.
+          </p>
+          <p class="text-gray-600 mb-6">
+            Beyond academics, I actively participate in coding competitions and hackathons, constantly pushing myself to learn and grow. My approach combines theoretical knowledge with practical application to create effective solutions.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div>
+              <p class="font-medium">Name: <span class="text-gray-600">Tejasvi Raj Singh</span></p>
+              <p class="font-medium">Email: <span class="text-gray-600">tejasvirajsingh2003@gmail.com</span></p>
+            </div>
+            <div>
+              <p class="font-medium">Education: <span class="text-gray-600">B.Tech at <b>Parul University</b></span></p>
+              <p class="font-medium">Interest: <span class="text-gray-600">Software Development</span></p>
+            </div>
+          </div>
+          <a href="CV.pdf" download class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition">
+  Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">My <span class="gradient-text">Education</span></h2>
+      <div class="max-w-3xl mx-auto">
+        <div class="relative pl-8 border-l-2 border-blue-500 space-y-8">
+          <!-- Education Item 1 -->
+          <div class="relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-auto border-4 border-white"></div>
+            <div class="ml-6">
+              <h3 class="text-xl font-semibold">Parul University</h3>
+              <p class="text-blue-600 mb-2">Bachelor of Technology (B.Tech)</p>
+              <p class="text-gray-500"><b>2023 - 2027</b> </p>
+              <p class="text-gray-600 mt-2">Currently pursuing my engineering degree with a focus on computer science and technology applications.</p>
+            </div>
+          </div>
+          <!-- Education Item 2 -->
+          <div class="relative">
+            <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-1 border-4 border-white"></div>
+            <div class="ml-6">
+              <h3 class="text-xl font-semibold">Higher Secondary School</h3>
+              <p class="text-blue-600 mb-2">Science Stream</p>
+              <p class="text-gray-500"> <b>2020 - 2022</b></p>
+              <p class="text-gray-600 mt-2">Completed 12th grade <b>A</b> with focus on<b> physics, chemistry, and mathematics</b> .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">My <span class="gradient-text">Skills</span></h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+       
+        <!-- Skill Item -->
+         <!-- C Language -->
+<div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+  <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+    <!-- Using Font Awesome's cuttlefish brand icon as a stand-in for C -->
+    <i class="fab fa-cuttlefish text-3xl text-blue-600"></i>
+  </div>
+  <h3 class="text-center font-semibold">C Language</h3>
+</div>
+
+ <!-- Skill Item -->
+
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fab fa-html5 text-3xl text-orange-500"></i>
+          </div>
+          <h3 class="text-center font-semibold">HTML5</h3>
+        </div>
+        
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
+          </div>
+          <h3 class="text-center font-semibold">CSS3</h3>
+        </div>
+        
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fab fa-js text-3xl text-yellow-500"></i>
+          </div>
+          <h3 class="text-center font-semibold">JavaScript</h3>
+        </div>
+        
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fab fa-python text-3xl text-blue-700"></i>
+          </div>
+          <h3 class="text-center font-semibold">Python</h3>
+        </div>
+        
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fas fa-database text-3xl text-blue-400"></i>
+          </div>
+          <h3 class="text-center font-semibold">SQL</h3>
+        </div>
+        
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fab fa-java text-3xl text-red-500"></i>
+          </div>
+          <h3 class="text-center font-semibold">Java</h3>
+        </div>
+        
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fab fa-git-alt text-3xl text-orange-600"></i>
+          </div>
+          <h3 class="text-center font-semibold">Git</h3>
+        </div>
+        
+        <!--skill Item-->
+        <!-- GitHub -->
+       <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+       <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+       <i class="fab fa-github text-3xl text-gray-800"></i>
+       </div>
+       <h3 class="text-center font-semibold">GitHub</h3>
+        </div>
+
+        <!-- Skill Item -->
+        <div class="skill-card bg-white p-6 rounded-xl shadow-md border border-gray-100 transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            <i class="fas fa-cogs text-3xl text-gray-600"></i>
+          </div>
+          <h3 class="text-center font-semibold">Problem Solving</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">My <span class="gradient-text">Projects</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg relative">
+          <div class="h-48 overflow-hidden">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/893164d2-0324-4a57-919f-f9b88ee5d435.png" alt="E-commerce website dashboard showing product listings, sales analytics, and order management interface" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
+            <p class="text-gray-600">A fully functional e-commerce website with product listings, cart system, and payment integration.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CSS</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300">
+            <a href="#" class="text-white bg-blue-600 px-4 py-2 rounded-lg mr-2 hover:bg-blue-700">View Demo</a>
+            <a href="#" class="text-white bg-gray-600 px-4 py-2 rounded-lg hover:bg-gray-700">Source Code</a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg relative">
+          <div class="h-48 overflow-hidden">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/468563b5-b001-475d-a2de-836a62af4a63.png" alt="Mobile app interface for task management showing to-do lists, calendar integration, and productivity statistics" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+            <p class="text-gray-600">A productivity application to organize tasks, set reminders, and track progress.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Node.js</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MongoDB</span>
+            </div>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300">
+            <a href="#" class="text-white bg-blue-600 px-4 py-2 rounded-lg mr-2 hover:bg-blue-700">View Demo</a>
+            <a href="#" class="text-white bg-gray-600 px-4 py-2 rounded-lg hover:bg-gray-700">Source Code</a>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Get In <span class="gradient-text">Touch</span></h2>
+      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-medium">Email</h4>
+                <p class="text-gray-600">tejasvirajsingh2003.com</p>
+              </div>
+            </div>
+           
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-medium">Location</h4>
+                <p class="text-gray-600">Parul University, Vadodara, India.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10">
+            <h4 class="font-medium mb-4">Connect with me</h4>
+            <div class="flex space-x-4">
+              <a href="https://www.linkedin.com/in/tejasvirajsingh" 
+   target="_blank" 
+   class="w-10 h-10 rounded-full bg-blue-100 hover:bg-blue-200 flex items-center justify-center text-blue-600">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+
+            <a href="https://github.com/tejasvirajsingh" 
+   target="_blank" 
+   class="w-10 h-10 rounded-full bg-blue-100 hover:bg-blue-200 flex items-center justify-center text-blue-600">
+  <i class="fab fa-github"></i>
+</a>
+
+              <!-- Twitter -->
+<a href="https://twitter.com/tejasvi_max" 
+   target="_blank" 
+   class="w-10 h-10 rounded-full bg-blue-100 hover:bg-blue-200 flex items-center justify-center text-blue-600">
+  <i class="fab fa-twitter"></i>
+</a>
+
+<!-- Instagram -->
+<a href="https://instagram.com/tejasvi_max" 
+   target="_blank" 
+   class="w-10 h-10 rounded-full bg-blue-100 hover:bg-blue-200 flex items-center justify-center text-blue-600">
+  <i class="fab fa-instagram"></i>
+</a>
+
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+          <form class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition w-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="text-2xl font-bold gradient-text">Tejasvi Max</div>
+          <p class="text-gray-400 mt-2">B.Tech Student & Aspiring Developer</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>© <span id="year"></span> Tejasvi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Footer  jsut for test-->
+
+
+
+
+  <script>
+
+    // dark mode 
+    
+  
+
+
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+    
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
