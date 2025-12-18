@@ -75,7 +75,7 @@ nav a {
 
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .btn {
@@ -87,7 +87,7 @@ nav a {
 }
 
 .primary {
-  background: #1a4cff;
+  background: #126766;
   color: white;
 }
 
